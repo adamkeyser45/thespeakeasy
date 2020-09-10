@@ -1,0 +1,30 @@
+{
+  "name": "thespeakeasy",
+  "version": "1.0.0",
+  "description": "A Forum for Drink Lovers!",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamkeyser45/thespeakeasy.git"
+  },
+  "author": "Rachel Fritz, Jess Tillson, Jacob Daughtry, Adam Keyser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamkeyser45/thespeakeasy/issues"
+  },
+  "homepage": "https://github.com/adamkeyser45/thespeakeasy#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.5"
+  }
+}
