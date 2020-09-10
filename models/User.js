@@ -49,7 +49,7 @@ User.init(
       about: {
         type: DataTypes.TEXT,
       },
-      room: {
+      mingle_id: {
         type: DataTypes.INTEGER,
       }
     },
