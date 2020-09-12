@@ -1,0 +1,32 @@
+
+.impact{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 120%;
+}
+.ingredient-list {
+    list-style-type: none;
+}
+.userNamePosts {
+    margin-bottom: 50px;
+    padding: 10px;
+    text-align: center;
+    color: grey;
+}
+#speakeasyMenu {
+    background: #611613;
+    box-shadow: grey 0px 10px 7px;
+}
+.light {
+    color: white;
+}
+.login {
+    width: 100%;
+}
+.signupH3 {
+    margin-top: 50px;
+   
+}
+.signupFormBox {
+    border: 2px solid black;
+    background: #dedede;
+}

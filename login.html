@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Speakeasy</title>
+    <link rel="stylesheet" href="./public/stylesheets/style.css">
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="title-bar se-title-bar" data-responsive-toggle="speakeasyMenu" data-hide-for="small">
+        <button class="menu-icon" type="button" data-toggle></button>
+    </div>
+    <div class="top-bar" id="speakeasyMenu">
+        <div class="top-bar-left">
+            <h4>Speakeasy</h4>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><a href="#" class="button expanded secondary hollow">My Account</a></li>
+                <li><a class="button secondary">Login</a></li>
+                <li><a class="button secondary">logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /Navigation -->
+    <br>
+
+    <div class="row columns">
+        <div class="row large-4  small-5 columns">
+            <form class="login-form">
+                <div>
+                    <label for="email-login">email:</label>
+                    <input type="text" id="email-login" />
+                </div>
+                <div>
+                    <label for="password-login">password:</label>
+                    <input type="password" id="password-login" />
+                </div>
+                <div>
+                    <button class="button secondary expanded" type="submit">login</button>
+                </div>
+            </form>
+        </div>
+        <h3 class="signupH3"> Don't have an account?<br> Make one Here!</h3>
+        <div class="row signupFormBox large-4 small-5 columns">
+            <form class="signup-form">
+                <div>
+                    <label for="username-signup">username:</label>
+                    <input type="text" id="username-signup" />
+                </div>
+                <div>
+                    <label for="email-signup">email:</label>
+                    <input type="text" id="email-signup" />
+                </div>
+                <div>
+                    <label for="password-signup">password:</label>
+                    <input type="password" id="password-signup" />
+                </div>
+                <div>
+                    <button class="button secondary expanded" type="submit">signup</button>
+                </div>
+            </form>
+            <script src="/javascript/login.js"></script>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+
+</html>
