@@ -22,8 +22,11 @@
             <div class="top-bar-right">
                 <ul class="menu">
                     <li><a href="#" class="button expanded secondary light hollow">My Account</a></li>
+                    {{#if loggedIn}}
+                    <li><button id="logout" class="button secondary logout">Logout</button></li>
+                    {{else}}
                     <li><a href= "/login" class="button login secondary">Login</a></li>
-                    <li><a class="button secondary">logout</a></li>
+                    {{/if}}
                 </ul>
             </div>
         </div>
@@ -40,6 +43,9 @@
             $(document).foundation();
         </script>
     </div>
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
 </body>
 
 </html>
