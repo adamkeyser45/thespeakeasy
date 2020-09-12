@@ -22,3 +22,11 @@
 .login {
     width: 100%;
 }
+.signupH3 {
+    margin-top: 50px;
+   
+}
+.signupFormBox {
+    border: 2px solid black;
+    background: #dedede;
+}
