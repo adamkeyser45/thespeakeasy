@@ -30,6 +30,7 @@
 .createAccount a{
     font-weight: bold;
     color: white;
+   
 }
 .createAccount a:hover{
     color: grey;
@@ -49,6 +50,8 @@
     padding:10px ;
     border: 2px solid grey;
     background: #dedede;
+    inset: ;
+    
 }
 .loginWrapper {
     width: 100vw;
@@ -64,4 +67,6 @@
     background: white;
     box-shadow: grey 00px 0px 30px;
     border: 5px grey solid;
+    border-radius: 5px;
+    border-style: outset;
 }
