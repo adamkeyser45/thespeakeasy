@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Speakeasy</title>
+    <link rel="stylesheet" href="./public/stylesheets/style.css">
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Navigation -->
+        <div class="title-bar se-title-bar" data-responsive-toggle="speakeasyMenu" data-hide-for="small">
+            <button class="menu-icon" type="button" data-toggle></button>
+        </div>
+        <div class="top-bar" id="speakeasyMenu">
+            <div class="top-bar-left">
+                <h4>Speakeasy</h4>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu">
+                    <li><a href="#" class="button expanded secondary light hollow">My Account</a></li>
+                    {{#if loggedIn}}
+                    <li><button id="logout" class="button secondary logout">Logout</button></li>
+                    {{else}}
+                    <li><a href= "/login" class="button login secondary">Login</a></li>
+                    {{/if}}
+                </ul>
+            </div>
+        </div>
+
+        <!-- /Navigation -->
+        <main>
+            {{{ body }}}
+        </main>
+
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+    </div>
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
+</body>
+
+</html>
