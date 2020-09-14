@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Speakeasy</title>
-    <link rel="stylesheet" href="./public/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 </head>
 
@@ -17,15 +17,15 @@
         </div>
         <div class="top-bar" id="speakeasyMenu">
             <div class="top-bar-left">
-                <h4>Speakeasy</h4>
+                <h4 class="light homeLink"><a href="/">Speakeasy</a></h4>
             </div>
             <div class="top-bar-right">
                 <ul class="menu">
-                    <li><a href="#" class="button expanded secondary light hollow">My Account</a></li>
+                    <li><a href="/dashboard" class="button expanded secondary light hollow">Recipe Book</a></li>
                     {{#if loggedIn}}
                     <li><button id="logout" class="button secondary logout">Logout</button></li>
                     {{else}}
-                    <li><a href= "/login" class="button login secondary">Login</a></li>
+                    <li><a href="/login" class="button login secondary">Login</a></li>
                     {{/if}}
                 </ul>
             </div>
@@ -43,9 +43,9 @@
             $(document).foundation();
         </script>
     </div>
-{{#if loggedIn}}
-<script src="/javascript/logout.js"></script>
-{{/if}}
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>

@@ -13,20 +13,84 @@
     color: grey;
 }
 #speakeasyMenu {
-    background: #611613;
+    background: rgb(77,6,6);
     box-shadow: grey 0px 10px 7px;
+
+}
+.homeLink a {
+    color: white;
+    text-decoration: none;
+}
+.homeLink a:hover{
+    color: grey;
 }
 .light {
     color: white;
 }
+.createAccount a{
+    font-weight: bold;
+    color: white;
+   
+}
+.createAccount a:hover{
+    color: grey;
+}
 .login {
     width: 100%;
 }
+.logout {
+    width: 100%;
+}
 .signupH3 {
-    margin-top: 50px;
-   
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid grey;
+    text-align: center;
+   font-weight: bold;
 }
 .signupFormBox {
-    border: 2px solid black;
+    margin-top: 20px;
+    padding:10px ;
+    border: 2px solid grey;
     background: #dedede;
+    inset: ;
+    
 }
+.loginWrapper {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(176,176,176);
+    background: radial-gradient(circle, rgba(176,176,176,1) 0%, rgba(255,255,255,1) 83%);
+    padding-top: 60px;
+}
+.formBoxes {
+    padding: 15px;
+    margin: 0 auto;
+    width: 70%;
+    background: white;
+    box-shadow: grey 00px 0px 30px;
+    border: 5px grey solid;
+    border-radius: 5px;
+    border-style: outset;
+}
+.dashboard-wrapper {
+    width: 70%;
+    height: 100%;
+    float: left;
+    padding: 40px;
+    margin: 5% 15%;
+    background: white;
+    box-shadow: grey 00px 0px 30px;
+    border: 5px grey solid;
+    border-radius: 5px;
+}
+.right-dash-column {
+    height: 400px;
+    width: 30%;
+    border-left:5px solid grey;
+    padding: 80px 0px 10px 30px;
+}
+.right-dash-column button a{
+    color: white;
+}
+
