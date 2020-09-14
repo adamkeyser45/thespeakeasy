@@ -1,0 +1,31 @@
+<div class="dashboard-wrapper">
+    <div class="column row large-5 medium-8 small-12 float-left">
+        <h3>Share your latest recipe:</h3>
+        <form class="new-post-form">
+            <div>
+                <label for="post-title">Drink Title:</label>
+                <input type="text" id="post-title" name="post-title" />
+            </div>
+            <div>
+                <label for="post-url">Link (optional):</label>
+                <input type="text" id="post-url" name="post-url" />
+            </div>
+            <div>
+                <label for="ingredientList">Ingredients:</label>
+                <textarea id="ingredientList" name="ingredient-list"></textarea>
+            </div>
+            <button type="submit" class="button secondary expanded">Share</button>
+        </form>
+    </div>
+
+
+
+    <div class="right-dash-column show-for-large float-right">
+
+        <button class="button secondary expanded"><a href="#">Recipes i've Shared</a></button>
+        <button class="button secondary expanded"><a href="#">My saved Recipes</a></button>
+        <button class="button secondary expanded"><a href="#">Share another Recipe</a></button>
+    </div>
+</div>
+
+<script src="/javascript/add-post.js"></script>
