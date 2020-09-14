@@ -3,7 +3,7 @@
 ## Description
 Description...
 
-## Demos
+## Screenshots
 <!-- * [VS Code Walkthrough](https://drive.google.com/file/d/12LIgxmhXn4T3BxZX-zRINUZ4iL9UZ5Qd/view)
  
 * [Insomnia Core Walkthrough](https://drive.google.com/file/d/1qHKzdIU0VcxjHzERE_ZLIIG_bV75UrSf/view)
@@ -18,7 +18,7 @@ Acceptance criteria...
 
 ## Table of Contents
   - [Description](#description)
-  - [Demos](#demos)
+  - [Screenshots](#screenshots)
   - [User Story](#user-story)
   - [Acceptance Criteria](#acceptance-criteria)
   - [Table of Contents](#table-of-contents)
