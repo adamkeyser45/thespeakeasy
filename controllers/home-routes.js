@@ -102,4 +102,14 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
+router.get('/recipe-blog', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+    
+    res.render('recipe-blog');
+});
+
+   
 module.exports = router;
