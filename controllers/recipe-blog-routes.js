@@ -31,7 +31,7 @@ router.get('/', (req, res) => {
           // pass a single post object into the homepage template
           const posts = dbPostData.map(post => post.get({ plain: true }))
           console.log(posts);
-          res.render('recipe-blog', { 
+          res.render('view-posts', { 
               posts,
               loggedIn: req.session.loggedIn
           });
