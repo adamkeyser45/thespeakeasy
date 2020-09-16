@@ -3,7 +3,7 @@ const randoDrinkTitle = document.getElementById("randoDrinkTitle");
 const randoDrinkInstr = document.getElementById("randoDrinkInstr");
 // const ingredientList = document.getElementById("ingredientList");
 
-window.onload = function() {
+function randomDrink(event) {
     const apiUrl = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
 
     fetch(apiUrl).then(function (response) {
@@ -24,3 +24,5 @@ window.onload = function() {
     });
 
 };
+
+window.addEventListener("load", randomDrink);

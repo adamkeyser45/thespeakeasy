@@ -1,4 +1,4 @@
-window.onload = function() {  
+function popularDrinks(event) {  
     const apiUrl = "https://www.thecocktaildb.com/api/json/v2/9973533/popular.php"
 
     fetch(apiUrl).then(function (response) {
@@ -43,3 +43,5 @@ function createPageElements(drinkName, drinkImgUrl) {
     columnDiv.appendChild(calloutDiv);
     popularDrinkCardContainer.appendChild(columnDiv);
 };
+
+window.addEventListener("load", popularDrinks);
