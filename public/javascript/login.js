@@ -18,6 +18,8 @@ async function signupFormHandler(event) {
 
         if (response.ok) { // .ok adds error handling
             console.log('success');
+            alert("Account Created");
+            location.href = '/';            
         } else {
             alert(response.statusText);
         }
