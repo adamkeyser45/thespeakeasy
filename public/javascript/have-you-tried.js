@@ -17,6 +17,8 @@ function randomDrink(event) {
                 randoDrinkInstr.textContent = instructions;
                 randoDrinkImg.setAttribute("src", drinkImgUrl);
                 randoDrinkImg.setAttribute("style", "width: 570px; height: 300px");
+
+                // listIngredients(data);
             });
         } else {
             alert("Error: " + response.statusText);
@@ -24,5 +26,15 @@ function randomDrink(event) {
     });
 
 };
+
+// function listIngredients(data) {
+//     console.log(data);
+
+//     for (let i = 1; i < 16; i++) {
+//         let ingredientNum = "strIngredient" + [i].toString();
+        
+//         if (data.drinks[0].ingredientNum ===)
+//     }
+// };
 
 window.addEventListener("load", randomDrink);
