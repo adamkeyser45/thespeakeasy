@@ -2,6 +2,11 @@
 .impact{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 120%;
+   
+}
+.searchQuery {
+    font-size:1em;
+    line-height: 2;
 }
 .ingredient-list {
     list-style-type: none;

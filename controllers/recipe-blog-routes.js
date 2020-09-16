@@ -6,7 +6,7 @@ const { Post, User, Discuss } = require('../models');
 
 
 router.get('/', (req, res) => {
-    res.render('recipe-blog', { loggedIn: true });
+    res.render('dashboard', { loggedIn: true });
   });
 
 module.exports = router;
