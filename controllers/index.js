@@ -12,6 +12,7 @@ router.use('/recipe-blog', recipeBlogRoutes);
 router.use('/myaccount', myaccountRoutes);
 router.use('/view-profile', profileRoutes);
 router.use('/api', apiRoutes);
+router.use('/view-posts', recipeBlogRoutes);
 
 router.use((req, res) => {
     res.status(404).end();
