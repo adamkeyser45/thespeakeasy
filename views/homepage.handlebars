@@ -24,14 +24,17 @@
                 <div class="row">
                     <div class="small-12 columns">
                         <label class="impact">Find Your Mix
-                            <input type="text" placeholder="Search Cocktails by Name">
+                            <input type="text" id="drinkName" placeholder="Search Cocktails by Name">
                         </label>
                     </div>
                     <div class="small-12 columns">
                         <label class="impact">Seach by Alcohol
-                            <input type="text" placeholder="Vodka, Whiskey, etc...">
+                            <input type="text" id="drinkIngr" placeholder="Vodka, Whiskey, etc...">
                         </label>
-                        <button type="submit" class="button searchNow secondary">Search Now!</button>
+                        <button type="button" id="drinkSearchBtn" class="button searchNow secondary">Search Now!</button>
+                    </div>
+                    <div id="drinkNameDiv">
+
                     </div>
                 </div>
             </form>
@@ -105,3 +108,5 @@
       <p><img src="https://placehold.it/200x170&text=Pegasi B"></p>
     </div>
   </div>
+
+<script src="/javascript/search-button.js"></script>
