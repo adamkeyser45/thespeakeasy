@@ -1,7 +1,5 @@
-window.onload = function() {  
+function popularDrinks(event) {  
     const apiUrl = "https://www.thecocktaildb.com/api/json/v2/9973533/popular.php"
-
-
 
     fetch(apiUrl).then(function (response) {
         if (response.ok) {
@@ -46,11 +44,4 @@ function createPageElements(drinkName, drinkImgUrl) {
     popularDrinkCardContainer.appendChild(columnDiv);
 };
 
-
-
-//<div class="columns large-4 small-6">
-//    <div class="callout secondary">
-//        <h5>Drink Name (linked)</h5>
-//        <p><img src="https://placehold.it/200x170&text=Pegasi B"></p>
-//    </div>
-//</div>
+window.addEventListener("load", popularDrinks);

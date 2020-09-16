@@ -43,15 +43,15 @@
 </div>
 
 <div class="row columns">
-  <h3 class="impact">Recipe of the Week</p>
+  <h3 class="impact">Have You Tried...</p>
 </div>
 
 <div class="row">
   <div class="columns large-6 small-12 float-left">
     <div class="card">
-      <p><img src="https://placehold.it/700x370&text=Pegasi B" ></p>
-      <h4>Spiciest Bloody Mary EVER</h4>
-      <p class="subheader">This bloody mary will set your nose on fire</p>
+      <img id="randoDrinkImg" src="" >
+      <h4 id="randoDrinkTitle"></h4>
+      <p id="randoDrinkInstr" class="subheader"></p>
     </div>
   </div>
     <div class="columns large-6 small-12 float-right">
@@ -59,7 +59,7 @@
         <h4>The Mixture:</h4>
         <div class="ingredients card">
            
-            <ul class="ingredient-list">
+            <ul id="ingredientList" class="ingredient-list">
               <li>ingredient 1</li>
               <li>ingredient 2</li>
               <li>ingredient 3</li>
@@ -72,12 +72,8 @@
   <br>
 <div id="popularDrinkCardContainer" class="row column">
   <h3 class="impact">Popular Drinks</h3>
-  {{!-- <div class="columns large-4 small-6">
-    <div class="callout secondary">
-      <h5>Drink Name (linked)</h5>
-      <img src="https://placehold.it/200x170&text=Pegasi B">
-    </div>
-  </div> --}}
+  {{!-- Popular drinks Dynamically loaded here --}}
 </div>
 <script src="/javascript/search-button.js"></script>
 <script src="/javascript/popular-drinks.js"></script>
+<script src="/javascript/have-you-tried.js"></script>
