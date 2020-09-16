@@ -11,10 +11,6 @@ User.hasMany(Post, {
 User.hasMany(Discuss, {
     foreignKey: 'user_id'
 });
-  
-Post.belongsTo(User, {
-    foreignKey: 'user_id',
-});
 
 Discuss.belongsTo(User, {
     foreignKey: 'user_id'
@@ -26,6 +22,10 @@ Discuss.belongsTo(Post, {
 
 Discuss.belongsTo(Recipe, {
     foreignKey: 'post_id'
+});
+
+Post.belongsTo(User, {
+    foreignKey: 'user_id',
 });
 
 Post.hasMany(Discuss, {
