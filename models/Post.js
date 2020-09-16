@@ -25,6 +25,13 @@ Post.init(
           model: 'user',
           key: 'id'
         }
+      },
+      mingle_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'mingle',
+          key: 'id'
+        }
       }
     },
     {

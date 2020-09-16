@@ -12,6 +12,30 @@ router.get('/', (req, res) => {
         });
 });
 
+router.get('/:id', (req, res) => {
+    Mingle.findOne({
+        where: {
+            id: req.params.id
+        },
+        attributes: [
+            'id',
+            'title',
+            'description'
+          ]
+    })
+    .then(dbMingleData => {
+        if (!dbMingleData) {
+          res.status(404).json({ message: 'No mingle found with this id' });
+          return;
+        }
+        res.json(dbMingleData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+});
+
 router.post('/', (req, res) => {
     if (req.session) {
         Mingle.create({
