@@ -14,7 +14,7 @@ Description...
 User story...
 
 ## Acceptance Criteria
-Acceptance criteria...
+Use Node.js and Express.js to create a RESTful API, use Handlebars.js as the templating engine, use MySQL and the Sequelize ORM for the database, have both GET and POST routes for retrieving and adding new data, create a deployable link with Heroku and data, use at least one new library, package or technology that we haven't discussed, have a polished UI, be responsive and interactive, have a folder structure that meets the MVC paradigm, incldue wauthetication (express-session and cookies), and protect API keys and sensitive information with environment variables
 
 ## Table of Contents
   - [Description](#description)
@@ -25,7 +25,7 @@ Acceptance criteria...
   - [Installation](#installation)
   - [Usage](#usage)
   - [Testing](#testing)
-  - [Contributing](#contributing)
+  - [Contribution](#contribution)
 
 ## Installation
 `npm init`
@@ -65,5 +65,8 @@ Install the above extensions listed in `Installation` and then run the following
 ## Testing
 No testing is set up at this moment. Tested externally through Insomnia Core.
 
-## Contributing
-Jessica Tillson, Adam Keyser, Jacob Daughtry, and Rachel Fritz
+## Contribution
+- Jessica Tillson (github.com/jtillson1)
+- Adam Keyser (github.com/adamkeyser45)
+- Jacob Daughtry (github.com/akutozo)
+- Rachel Fritz (github.com/rachelf0)
