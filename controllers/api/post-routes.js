@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
         // include the Discuss model here:
         {
           model: Discuss,
-          attributes: ['id', 'opinion', 'post_id', 'user_id', 'created_at'],
+          attributes: ['id', 'opinion', 'post_id', 'user_id', 'mingle_id', 'created_at'],
           include: {
             model: User,
             attributes: ['username']
@@ -80,7 +80,8 @@ router.post('/', (req, res) => {
     Post.create({
       title: req.body.title,
       topic: req.body.topic,
-      user_id: req.body.user_id
+      user_id: req.body.user_id,
+      mingle_id: req.body.mingle_id
     })
       .then(dbPostData => res.json(dbPostData))
       .catch(err => {
