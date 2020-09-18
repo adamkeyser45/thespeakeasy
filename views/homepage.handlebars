@@ -1,6 +1,7 @@
 <br>
 <div class="row">
   <!--if logged in-->
+  {{!-- {{#if loggedIn}} --}}
     <div class="medium-7 large-6 columns">
         <h1 class="impact">Catch up on your Recipes. </h1>
         <p class="subheader">The Speakeasy is a place to share, save, and drink what you love. With tasting rooms for
@@ -8,6 +9,7 @@
         <button class="button secondary createAccount expanded"><a href= "/recipe-blog">Recipe Posts</a></button>
     </div>
   <!--if new user-->
+  {{!-- {{#else}} --}}
     <div class="medium-7 large-6 columns">
         <h1 class="impact">Welcome to our club. </h1>
         <p class="subheader">The Speakeasy is a place to share, save, and drink what you love. With tasting rooms for
@@ -15,9 +17,7 @@
         <button class="button secondary createAccount expanded"><a href= "/login">Create Account</a></button>
     </div>
  <!----->
-    <div class="show-for-large large-3 columns">
-        <img src="https://placehold.it/400x370&text=PSR1257 + 12 C">
-    </div>
+ {{!-- {{/if}} --}}
     <div class="medium-5 large-3 columns">
         <div class="callout secondary">
             <form>
@@ -58,13 +58,8 @@
     <div class="card ingredients">
         <h4>The Mixture:</h4>
         <div class="ingredients card">
-           
             <ul id="ingredientList" class="ingredient-list">
-              <li>ingredient 1</li>
-              <li>ingredient 2</li>
-              <li>ingredient 3</li>
-              <li>ingredient 4</li>
-              <li>ingredient 5</li>
+            </ul>
         </div>
     </div>
     </div>
