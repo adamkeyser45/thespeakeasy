@@ -1,6 +1,21 @@
-<article class="post">
+<article class="post" class="columns 4" style="margin: 5%; border-style: solid; width: 75%;">
     <div class="title">
-        <h3>{{title}}</h3>
-        <div>{{topic}}</div>
+        <a href="/post/{{id}}">{{title}}</a>
+    </div>    
+    <div>
+        <p>{{topic}}</p>
     </div>
+
+        
+        {{!-- <form class="comment-form">
+            <div>
+                <textarea name="comment-body" style="width: 500px;">Your Comment</textarea>
+            </div>
+
+            <div>
+                <button type="submit" class="button">Add a Comment</button>
+            </div>
+        </form>
+        
+     --}}
 </article>
