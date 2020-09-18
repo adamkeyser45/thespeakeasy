@@ -13,21 +13,35 @@ Recipe.init(
         primaryKey: true,
         autoIncrement: true
       },
-      recipe_name: {
+      name: {
         type: DataTypes.STRING,
         allowNull: false
       },
-      optional_url: {
+      url: {
         type: DataTypes.STRING,
         validate: {
             isURL: true
           }
       },
-      ingredients: {
+      instructions: {
         type: DataTypes.STRING,
         allowNull: false
       },
-      creator: {
+      ingredient1: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      ingredient2: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      ingredient3: {
+        type: DataTypes.STRING,
+      },
+      ingredient4: {
+        type: DataTypes.STRING,
+      },
+      mixologist: {
         type: DataTypes.INTEGER,
         references: {
           model: 'user',

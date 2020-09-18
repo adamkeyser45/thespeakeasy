@@ -21,11 +21,19 @@ Discuss.belongsTo(Post, {
 });
 
 Discuss.belongsTo(Recipe, {
-    foreignKey: 'post_id'
+    foreignKey: 'recipe_id'
 });
 
 Post.belongsTo(User, {
     foreignKey: 'user_id',
+});
+
+Post.belongsTo(Mingle, {
+    foreignKey: 'post_id',
+});
+
+Mingle.hasMany(Post, {
+    foreignKey: 'mingle_id',
 });
 
 Post.hasMany(Discuss, {
