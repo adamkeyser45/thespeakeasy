@@ -1,4 +1,6 @@
-# The Speak Easy
+# The Speakeasy
+
+![Express](https://img.shields.io/badge/-Express.js-orange) ![javascript](https://img.shields.io/badge/-javascript-green) ![node JS](https://img.shields.io/badge/-nodeJS-yellowgreen) ![jest](https://img.shields.io/badge/-jest-yellow) ![MySQL](https://img.shields.io/badge/-MySQL-red) ![Sequelize](https://img.shields.io/badge/-Sequelize-blue) ![HandlesBars](https://img.shields.io/badge/-HandleBars-magenta) ![Foundation](https://img.shields.io/badge/-Foundation-lightgreen) ![bcrypt](https://img.shields.io/badge/-bcrypt-blue)
 
 ## Description
 ```
