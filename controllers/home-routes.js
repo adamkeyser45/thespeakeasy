@@ -101,15 +101,15 @@ router.get('/login', (req, res) => {
     
     res.render('login');
 });
-//recipe-blog
-router.get('/recipe-blog', (req, res) => {
-    if (req.session.loggedIn) {
-        res.redirect('/');
-        return;
-    }
+
+// router.get('/recipe-blog', (req, res) => {
+//     if (req.session.loggedIn) {
+//         res.redirect('/');
+//         return;
+//     }
     
-    res.render('recipe-blog');
-});
+//     res.render('recipe-blog');
+// });
 
    
 module.exports = router;
