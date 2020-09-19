@@ -21,9 +21,11 @@ async function findDrink(event) {
                 response.json().then(function (data) {
     
                     for (let i = 0; i < data.drinks.length; i++) {
-                        const drinkTitle = document.createElement("li");
+                        const listItem = document.createElement("li");
+                        const drinkTitle = document.createElement("a");
                         drinkTitle.textContent = data.drinks[i].strDrink;
-                        drinkNameDiv.appendChild(drinkTitle);
+                        listItem.appendChild(drinkTitle);
+                        drinkNameDiv.appendChild(listItem);
                     }
                 });
             } else {
@@ -47,9 +49,11 @@ async function findDrink(event) {
                 response.json().then(function (data) {
     
                     for (let i = 0; i < data.drinks.length; i++) {
-                        const drinkTitle = document.createElement("li");
+                        const listItem = document.createElement("li");
+                        const drinkTitle = document.createElement("a");
                         drinkTitle.textContent = data.drinks[i].strDrink;
-                        drinkNameDiv.appendChild(drinkTitle);
+                        listItem.appendChild(drinkTitle);
+                        drinkNameDiv.appendChild(listItem);
                     }
                 });
             } else {
