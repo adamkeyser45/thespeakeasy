@@ -1,72 +1,77 @@
 <br>
 <div class="row">
   <!--if logged in-->
-  {{!-- {{#if loggedIn}} --}}
-    <div class="medium-7 large-6 columns">
-        <h1 class="impact">Catch up on your Recipes. </h1>
-        <p class="subheader">The Speakeasy is a place to share, save, and drink what you love. With tasting rooms for
-            everyone, you're sure to find your perfect glass. Let's get started! </p>
-        <button class="button secondary createAccount expanded"><a href= "/recipe-blog">Recipe Posts</a></button>
-    </div>
+  {{#if loggedIn}}
+  <div class="medium-7 large-6 columns">
+    <h1 class="impact">Catch up on your Recipes. </h1>
+    <p class="subheader">The Speakeasy is a place to share, save, and drink what you love. With tasting rooms for
+      everyone, you're sure to find your perfect glass. Let's get started! </p>
+    <button class="button secondary createAccount expanded"><a href="/recipe-blog">Recipe Posts</a></button>
+  </div>
+  {{else}}
   <!--if new user-->
-  {{!-- {{#else}} --}}
-    <div class="medium-7 large-6 columns">
-        <h1 class="impact">Welcome to our club. </h1>
-        <p class="subheader">The Speakeasy is a place to share, save, and drink what you love. With tasting rooms for
-            everyone, you're sure to find your perfect glass. Let's get started! </p>
-        <button class="button secondary createAccount expanded"><a href= "/login">Create Account</a></button>
-    </div>
- <!----->
- {{!-- {{/if}} --}}
-    <div class="medium-5 large-3 columns">
-        <div class="callout secondary">
-            <form>
-                <div class="row">
-                    <div class="small-12 columns">
-                        <label class="impact">Find Your Mix
-                            <input type="text" id="drinkName" placeholder="Search Cocktails by Name">
-                        </label>
-                    </div>
-                    <div class="small-12 columns">
-                        <label class="impact">Seach by Alcohol
-                            <input type="text" id="drinkIngr" placeholder="Vodka, Whiskey, etc...">
-                        </label>
-                        <button type="button" id="drinkSearchBtn" class="button searchNow secondary">Search Now!</button>
-                    </div>
-                    <div id="drinkNameDiv">
 
-                    </div>
-                </div>
-            </form>
+  <div class="medium-7 large-6 columns">
+    <h1 class="impact">Welcome to our club. </h1>
+    <p class="subheader">The Speakeasy is a place to share, save, and drink what you love. With tasting rooms for
+      everyone, you're sure to find your perfect glass. Let's get started! </p>
+    <button class="button secondary createAccount expanded"><a href="/login">Create Account</a></button>
+  </div>
+  {{/if}}
+  <!----->
+
+  <div class="medium-5 large-3 columns">
+    <div class="callout secondary">
+      <form>
+        <div class="row">
+          <div class="small-12 columns">
+            <label class="impact searchQuery">Find Your Mix
+              <input type="text" id="drinkName" placeholder="Search Cocktails by Name">
+            </label>
+          </div>
+          <div class="small-12 columns">
+            <label class="impact searchQuery">Seach by Alcohol
+              <input type="text" id="drinkIngr" placeholder="Vodka, Whiskey, etc...">
+            </label>
+            <button type="button" id="drinkSearchBtn" class="button searchNow secondary">Search Now!</button>
+          </div>
+          <div id="drinkNameDiv">
+
+          </div>
         </div>
+      </form>
     </div>
+  </div>
 </div>
-
+<div class="haveyoutried">
 <div class="row columns">
-  <h3 class="impact">Have You Tried...</p>
+  <h3 class="subheader">A fresh recipe for you...</p>
 </div>
-
 <div class="row">
-  <div class="columns large-6 small-12 float-left">
+  <div class="columns large-4 medium-5 small-12 float-left">
     <div class="card">
-      <img id="randoDrinkImg" src="" >
-      <h4 id="randoDrinkTitle"></h4>
+      <h4 id="randoDrinkTitle" class="impact"></h4>
+      <img id="randoDrinkImg" src="">
+    </div>
+  </div>
+  <div class="columns large-6 small-12 float-right">
+    <div class="card ingredients">
+      <h4>What you'll need:</h4>
+      <div class="card">
+        <ul id="ingredientList" class="ingredient-list subheader">
+        </ul>
+      </div>
+    </div>
+    <div class="card instruct">
+      <h4>How you'll do it:</h4>
       <p id="randoDrinkInstr" class="subheader"></p>
     </div>
   </div>
-    <div class="columns large-6 small-12 float-right">
-    <div class="card ingredients">
-        <h4>The Mixture:</h4>
-        <div class="ingredients card">
-            <ul id="ingredientList" class="ingredient-list">
-            </ul>
-        </div>
-    </div>
-    </div>
-  </div>
-  <br>
+</div>
+</div>
+<br>
 <div id="popularDrinkCardContainer" class="row column">
-  <h3 class="impact">Popular Drinks</h3>
+  <h3 class="subheader">Popular drinks today...</h3>
   {{!-- Popular drinks Dynamically loaded here --}}
 </div>
 <script src="/javascript/search-button.js"></script>

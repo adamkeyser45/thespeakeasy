@@ -22,15 +22,16 @@ function createPageElements(drinkName, drinkImgUrl) {
 
     // create the "columns div"
     const columnDiv = document.createElement("div");
-    columnDiv.classList.add("columns", "large-4", "small-6");
+    columnDiv.classList.add("columns", "large-4", "small-6", "flex");
 
     // create the "callout div"
     const calloutDiv = document.createElement("div");
-    calloutDiv.classList.add("callout", "secondary");
+    calloutDiv.classList.add("callout", "popDrink");
 
     // create the card title
     const cardTitle = document.createElement("h5");
     cardTitle.textContent = drinkName;
+    cardTitle.classList.add("popDrinkTitle");
     calloutDiv.appendChild(cardTitle);
 
     // create the drink image
