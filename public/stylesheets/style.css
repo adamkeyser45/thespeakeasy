@@ -136,6 +136,15 @@
     width: 80%; /* Could be more or less, depending on screen size */
 }
 
+#drinkNameDiv {
+    /* display: flex; */
+}
+
+#drinkInfoDiv {
+    
+    background-color: dimgray;
+}
+
 /* The Close Button */
 .close {
     color: #aaa;
