@@ -2,13 +2,21 @@
     <div class="blog-post">
         <h3 class="posttitle"><a href="/recipes/{{id}}">{{name}}</a></h3>
        
-        <div class="subheader">
-        <p>{{name}}</p>
+        <div class="subheader callout">
+        <h4>Instructions</h4>
+        <p>{{instructions}}</p>
+        <h4>Ingredients:</h4>
+        <ul name="ingredients" class="menu simple">
+            <ol>{{ingredient1}}</ol>
+            <ol>{{ingredient2}}</ol>
+            <ol>{{ingredient3}}</ol>
+            <ol>{{ingredient4}}</ol>
+        </ul>
     </div>
         <div class="callout large-7 small-12">
             <ul class="menu simple">
-                <li><a>Author:</a></li>
-                <li><a>Rating:</a></li>
+                <ul><a>Author:</a></ul>
+                <ul><a>Rating:</a></ul>
             </ul>
         </div>
        
