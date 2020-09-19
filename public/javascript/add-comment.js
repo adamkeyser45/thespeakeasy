@@ -1,5 +1,6 @@
 async function commentFormHandler(event) {
     event.preventDefault();
+    console.log("I WORK!");
   
     const opinion = document.querySelector('textarea[name="comment-body"]').value.trim();
   
@@ -27,4 +28,4 @@ async function commentFormHandler(event) {
     };
 };
   
-document.querySelector('.comment-form').addEventListener('submit', commentFormHandler);
+document.querySelector('#addCommentBtn').addEventListener('click', commentFormHandler);
