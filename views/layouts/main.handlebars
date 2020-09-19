@@ -21,8 +21,10 @@
             </div>
             <div class="top-bar-right">
                 <ul class="menu">
-                    <li><a href="/dashboard" class="button expanded secondary light hollow">Start a Conversation</a></li>
                     {{#if loggedIn}}
+                    <li><a href="/dashboard" class="button expanded secondary light hollow">Start a Conversation</a></li>
+                    <li><a href="/recipe-dashboard" class="button expanded secondary light hollow">Share a Recipe</a></li>
+                    <li><a href="/myaccount" class="button expanded secondary light hollow">My Account</a></li>
                     <li><button id="logout" class="button secondary logout">Logout</button></li>
                     {{else}}
                     <li><a href="/login" class="button login secondary">Login</a></li>
