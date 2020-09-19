@@ -4,9 +4,7 @@ async function findDrink(event) {
     const drinkName = document.getElementById('drinkName').value;
     const drinkIngr = document.getElementById('drinkIngr').value;
     const drinkNameDiv = document.getElementById('drinkNameDiv');
-
-    console.log(drinkName);
-    console.log(drinkIngr);
+    const drinkNameDivTitle = document.getElementById('drinkNameDivTitle');
 
     if (drinkName && !drinkIngr) {
         // search for drink by name
@@ -16,13 +14,18 @@ async function findDrink(event) {
             drinkNameDiv.innerHTML = "";
     
             if (response.ok) {
+                drinkNameDivTitle.removeAttribute('hidden');
+                drinkNameDiv.removeAttribute('hidden');
+
                 // send the parsed JSON data
                 response.json().then(function (data) {
     
                     for (let i = 0; i < data.drinks.length; i++) {
-                        const drinkTitle = document.createElement("p");
+                        const listItem = document.createElement("li");
+                        const drinkTitle = document.createElement("a");
                         drinkTitle.textContent = data.drinks[i].strDrink;
-                        drinkNameDiv.appendChild(drinkTitle);
+                        listItem.appendChild(drinkTitle);
+                        drinkNameDiv.appendChild(listItem);
                     }
                 });
             } else {
@@ -39,13 +42,18 @@ async function findDrink(event) {
             drinkNameDiv.innerHTML = "";
     
             if (response.ok) {
+                drinkNameDivTitle.removeAttribute('hidden');
+                drinkNameDiv.removeAttribute('hidden');
+
                 // send the parsed JSON data
                 response.json().then(function (data) {
     
                     for (let i = 0; i < data.drinks.length; i++) {
-                        const drinkTitle = document.createElement("p");
+                        const listItem = document.createElement("li");
+                        const drinkTitle = document.createElement("a");
                         drinkTitle.textContent = data.drinks[i].strDrink;
-                        drinkNameDiv.appendChild(drinkTitle);
+                        listItem.appendChild(drinkTitle);
+                        drinkNameDiv.appendChild(listItem);
                     }
                 });
             } else {
