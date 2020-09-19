@@ -1,19 +1,19 @@
 <div class="dashboard-wrapper">
     <div class="column row large-5 medium-8 small-12 float-left">
-        <h3>Share your latest recipe:</h3>
+        <h3>Start a Conversation Here:</h3>
         <form class="new-post-form">
             <div>
-                <label for="post-title">Drink Title:</label>
+                <label for="post-title">Title:</label>
                 <input type="text" id="post-title" name="post-title" />
             </div>
             <div>
-                <label for="post-topic">Link (optional):</label>
-                <input type="text" id="post-topic" name="post-topic" />
+                <label for="post-topic">Topic:</label>
+                <textarea id="post-topic" name="post-topic"></textarea>
             </div>
-            <div>
+            {{!-- <div>
                 <label for="ingredientList">Ingredients:</label>
                 <textarea id="ingredientList" name="ingredient-list"></textarea>
-            </div>
+            </div> --}}
             <button type="submit" class="button secondary expanded">Share</button>
         </form>
     </div>
