@@ -130,3 +130,11 @@
 .blog-side-bar li a:hover {
     color: black;
 }
+
+#drinkNameDiv {
+    background-color: rgb(224, 222, 219);
+    margin: auto;
+    width: 225px;
+    height: 100px;
+    overflow: scroll;
+}

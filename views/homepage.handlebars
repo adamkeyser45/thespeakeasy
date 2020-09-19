@@ -31,12 +31,15 @@
                         <label class="impact">Seach by Alcohol
                             <input type="text" id="drinkIngr" placeholder="Vodka, Whiskey, etc...">
                         </label>
+                        {{!-- <button class="button">Blue Margarita</button> --}}
                         <button type="button" id="drinkSearchBtn" class="button searchNow secondary">Search Now!</button>
+                        
                     </div>
-                    <div id="drinkNameDiv">
+                    <h5 id="drinkNameDivTitle" hidden="true" style="padding: 5%;">Click a drink to learn more!</h5>
+                    <div id="drinkNameDiv" hidden="true">
 
                     </div>
-                </div>
+                </div>  
             </form>
         </div>
     </div>
@@ -58,7 +61,7 @@
     <div class="card ingredients">
         <h4>The Mixture:</h4>
         <div class="ingredients card">
-            <ul id="ingredientList" class="ingredient-list">
+            <ul style="list-style-type:disc;" id="ingredientList" class="ingredient-list">
             </ul>
         </div>
     </div>
