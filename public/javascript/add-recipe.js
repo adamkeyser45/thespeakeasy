@@ -3,17 +3,18 @@ async function newFormHandler(event) {
   
     const title = document.querySelector('input[name="recipe-name"]').value;
     const url = document.querySelector('input[name="recipe-url"]').value;
-    const instructions = document.querySelector('input[name="recipe-instructions"]').value;
+    const instructions = document.querySelector('textarea[name="recipe-instructions"]').value;
     const ingredient1 = document.querySelector('input[name="ingredient1"]').value;
     const ingredient2 = document.querySelector('input[name="ingredient2"]').value;
     const ingredient3 = document.querySelector('input[name="ingredient3"]').value;
     const ingredient4 = document.querySelector('input[name="ingredient4"]').value;
+    console.log(title)
   
   
     const response = await fetch(`/api/recipes`, {
       method: 'POST',
       body: JSON.stringify({
-        title,
+        name,
         url,
         instructions,
         ingredient1,
@@ -33,4 +34,4 @@ async function newFormHandler(event) {
     }
   }
   
-  document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
+  document.querySelector('.recipe-form').addEventListener('submit', newFormHandler);
