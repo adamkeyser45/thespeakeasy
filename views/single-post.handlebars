@@ -1,5 +1,13 @@
 {{> post-info post}}
 
+<ul>
+    {{#each post.discusses as |comment|}}
+    <li>
+        {{comment.opinion}}
+    </li>
+    {{/each}}
+</ul>
+
 {{!-- {{#if loggedIn}} --}}
 <div class="card">
     <div class="card-body">
@@ -17,7 +25,8 @@
 {{!-- 
 {{/if}} --}}
 
-{{> comments post.comments}}
+
+
 
 {{#if loggedIn}}
 <script src="/javascript/add-comment.js"></script>

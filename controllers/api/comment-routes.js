@@ -13,7 +13,6 @@ router.get('/', (req, res) => {
 
 // Post to create a comment
 router.post('/', (req, res) => {
-    console.log("========================+++++++++++++++++=================", req.body);
     
     if (req.session) {
         Discuss.create({
