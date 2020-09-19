@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
 
 // Post to create a comment
 router.post('/', (req, res) => {
+    
     if (req.session) {
         Discuss.create({
             opinion: req.body.opinion,

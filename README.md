@@ -1,6 +1,9 @@
-# The Speak Easy
+# The Speakeasy
+
+![Express](https://img.shields.io/badge/-Express.js-orange) ![javascript](https://img.shields.io/badge/-javascript-green) ![node JS](https://img.shields.io/badge/-nodeJS-yellowgreen) ![jest](https://img.shields.io/badge/-jest-yellow) ![MySQL](https://img.shields.io/badge/-MySQL-red) ![Sequelize](https://img.shields.io/badge/-Sequelize-blue) ![HandlesBars](https://img.shields.io/badge/-HandleBars-magenta) ![Foundation](https://img.shields.io/badge/-Foundation-lightgreen) ![bcrypt](https://img.shields.io/badge/-bcrypt-blue)
 
 ## Description
+
 The Speakeasy is a platform for consumers, created by consumers. The Speakeasy is a host for people to share, post, comment, and rate beverage recipes. Employing handlebars.js, cocktaildb API, MySQL, Express.js, and Sequelize, The Speakeasy application allows access to only registered users. Upon loading, a user will be prompted with a login/signup page. After a successful register or login, the user will be redirected to the home page. Here, they will be presented with popular drinks, search filter functions, and a drink recipe of the day. The application provides an opportunity for discussion, as each post allows for comments and ratings.
 
 ## Screenshots
@@ -11,10 +14,21 @@ The Speakeasy is a platform for consumers, created by consumers. The Speakeasy i
 * [Schema Usage Walkthrough](https://drive.google.com/file/d/1DWdDydTegOgkPCSq3rsYVIom6uvSwJfQ/view) -->
 
 ## User Story
-User story...
+AS a person who enjoys a nice drink and I WANT TO be able to find a new drink with ease ..... STILL WORKING
 
 ## Acceptance Criteria
-Use Node.js and Express.js to create a RESTful API, use Handlebars.js as the templating engine, use MySQL and the Sequelize ORM for the database, have both GET and POST routes for retrieving and adding new data, create a deployable link with Heroku and data, use at least one new library, package or technology that we haven't discussed, have a polished UI, be responsive and interactive, have a folder structure that meets the MVC paradigm, incldue wauthetication (express-session and cookies), and protect API keys and sensitive information with environment variables
+```
+Use Node.js and Express.js to create a RESTful API
+Use Handlebars.js as the templating engine
+Use MySQL and the Sequelize ORM for the database
+Have both GET and POST routes for retrieving and adding new data 
+Create a deployable link with Heroku and data
+Use at least one new library, package or technology that we haven't discussed
+Have a polished UI, be responsive and interactive
+Have a folder structure that meets the MVC paradigm
+Incldue wauthetication (express-session and cookies)
+Protect API keys and sensitive information with environment variables
+```
 
 ## Table of Contents
   - [Description](#description)
@@ -66,6 +80,7 @@ Install the above extensions listed in `Installation` and then run the following
 No testing is set up at this moment. Tested externally through Insomnia Core.
 
 ## Contribution
+This README was generated with ❤️ by:
 - Jessica Tillson (github.com/jtillson1)
 - Adam Keyser (github.com/adamkeyser45)
 - Jacob Daughtry (github.com/akutozo)

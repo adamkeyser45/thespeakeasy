@@ -2,6 +2,14 @@
 
 {{> post-info post}}
 
+<ul>
+    {{#each post.discusses as |comment|}}
+    <li>
+        {{comment.opinion}}
+    </li>
+    {{/each}}
+</ul>
+
 {{!-- {{#if loggedIn}} --}}
 <div class="card row medium-8 large-7 column">
     <div class="card-body">
@@ -10,17 +18,19 @@
             <div class="">
                 <textarea name="comment-body"  class="large-5 medium-5 small-12"></textarea>
             </div>
+        </form> 
             <div>
-                <button type="submit" class="button">Submit Comment</button>
+                <button id="addCommentBtn" class="button">Leave a Comment!</button>
             </div>
-        </form>        
+               
     </div>
 </div>
 
 {{!-- 
 {{/if}} --}}
- 
-{{> comments post.comments}}
+
+
+
 
 {{#if loggedIn}}
 <script src="/javascript/add-comment.js"></script>

@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
         // include the Discuss model here:
         {
           model: Discuss,
-          attributes: ['id', 'opinion', 'post_id', 'user_id', 'mingle_id', 'created_at'],
+          attributes: ['id', 'opinion', 'post_id', 'user_id', 'created_at'],
           include: {
             model: User,
             attributes: ['username']
