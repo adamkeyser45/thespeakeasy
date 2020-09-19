@@ -1,3 +1,5 @@
+<a href="/recipe-blog"><button class="button backBtn secondary">Go back</button></a>
+
 {{> post-info post}}
 
 <ul>
@@ -9,11 +11,12 @@
 </ul>
 
 {{!-- {{#if loggedIn}} --}}
-<div class="card">
+<div class="card row medium-8 large-7 column">
     <div class="card-body">
+        
         <form class="comment-form">
-            <div>
-                <textarea name="comment-body" style="width: 50%; height: 100px"></textarea>
+            <div class="">
+                <textarea name="comment-body"  class="large-5 medium-5 small-12"></textarea>
             </div>
         </form> 
             <div>
@@ -22,6 +25,7 @@
                
     </div>
 </div>
+
 {{!-- 
 {{/if}} --}}
 

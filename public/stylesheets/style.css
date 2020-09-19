@@ -1,10 +1,26 @@
-
 .impact{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 120%;
+   
+}
+.flex {
+    display: flex;
+    
+}
+.popDrinkTitle {
+   font-weight: bold;
+   text-align: center;
+}
+#myAccount a{
+    color: grey;
+}
+.searchQuery {
+    font-size:1em;
+    line-height: 2;
 }
 .ingredient-list {
     list-style-type: none;
+
 }
 .userNamePosts {
     margin-bottom: 50px;
@@ -20,6 +36,11 @@
 .homeLink a {
     color: white;
     text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size:1.3em;
+    margin-left: 10px;
+    text-shadow: rgb(38, 0, 0) 5px 5px 5px;
 }
 .homeLink a:hover{
     color: grey;
@@ -129,4 +150,45 @@
 }
 .blog-side-bar li a:hover {
     color: black;
+}
+.post {
+    border: 2px solid #dedede;
+    margin-top: 50px;
+}
+.ingredients {
+    background: #ebebeb;
+    padding:10px;
+    border:2px grey solid;
+}
+.ingredients h4 {
+    font-weight: bold;
+}
+.instruct h4 {
+    font-weight: bold;
+}
+.instruct {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size:1.4em;
+    padding:10px;
+}
+#popularDrinkCardContainer {
+    margin: 0 auto;
+}
+#popularDrinkCardContainer h3 {
+    margin-bottom: 20px;
+}
+.haveyoutried {
+    box-shadow: grey 5px 5px 30px;
+    padding:20px;
+   margin: 30px 0;
+}
+.center {
+    text-align: center;
+}
+.posttitle a {
+    color: black;
+}
+.posttitle a:hover {
+    color: maroon;
 }
