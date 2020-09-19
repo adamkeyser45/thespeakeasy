@@ -1,5 +1,6 @@
 const User = require("./User");
 const Post = require("./Post");
+const Recipe = require("./Recipe");
 const Discuss = require("./Discuss");
 const Mingle = require("./Mingle");
 
@@ -10,10 +11,6 @@ User.hasMany(Post, {
 User.hasMany(Discuss, {
     foreignKey: 'user_id'
 });
-  
-Post.belongsTo(User, {
-    foreignKey: 'user_id',
-});
 
 Discuss.belongsTo(User, {
     foreignKey: 'user_id'
@@ -23,8 +20,28 @@ Discuss.belongsTo(Post, {
     foreignKey: 'post_id'
 });
 
+Discuss.belongsTo(Recipe, {
+    foreignKey: 'recipe_id'
+});
+
+Post.belongsTo(User, {
+    foreignKey: 'user_id',
+});
+
+Post.belongsTo(Mingle, {
+    foreignKey: 'post_id',
+});
+
+Mingle.hasMany(Post, {
+    foreignKey: 'mingle_id',
+});
+
 Post.hasMany(Discuss, {
     foreignKey: 'post_id'
 });
 
-module.exports = { User, Post, Discuss, Mingle };
+Recipe.belongsTo(User, {
+    foreignKey: 'user_id'
+});
+
+module.exports = { User, Post, Discuss, Mingle, Recipe };

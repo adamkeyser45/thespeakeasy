@@ -1,0 +1,47 @@
+      <div class="row column text-center recipe-title ">
+        <h1>Recipes</h1>
+      </div>
+
+    <div class="row" id="content">
+      <div class="medium-8 columns">
+        <div class="blog-post">
+          <h3>Drink Title<small> (date)</small></h3>
+          <img class="thumbnail" src="https://placehold.it/850x350">
+          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci.</p>
+          <div class="callout">
+           <h6 class="recipe-link"><a href="/single-post">Learn More...</a></h6>
+          </div>
+        </div>
+
+      </div>
+      <div class="medium-3 columns" data-sticky-container>
+        <div class="sticky" data-sticky data-anchor="content">
+          <h4>Look at:</h4>
+          <ul class="blog-side-bar">
+            <li><a href="#">My Saved Recipes</a></li>
+            <li><a href="#">My Shared Recipes</a></li>
+            <li><a href="#">All Recipes</a></li>
+            <li><a href="#">Share New Recipe</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row column">
+      <ul class="pagination" role="navigation" aria-label="Pagination">
+        <li class="disabled">Previous</li>
+        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+        <li><a href="#" aria-label="Page 2">2</a></li>
+        <li><a href="#" aria-label="Page 3">3</a></li>
+        <li><a href="#" aria-label="Page 4">4</a></li>
+        <li class="ellipsis"></li>
+        <li><a href="#" aria-label="Page 12">12</a></li>
+        <li><a href="#" aria-label="Page 13">13</a></li>
+        <li><a href="#" aria-label="Next page">Next</a></li>
+      </ul>
+    </div>
+
+{{#each posts as |post|}}
+{{post.title}}
+{{post.topic}}
+{{/each}}
