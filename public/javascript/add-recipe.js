@@ -2,7 +2,6 @@ async function newFormHandler(event) {
     event.preventDefault();
   
     const title = document.querySelector('input[name="recipe-name"]').value;
-    const url = document.querySelector('input[name="recipe-url"]').value;
     const instructions = document.querySelector('textarea[name="recipe-instructions"]').value;
     const ingredient1 = document.querySelector('input[name="ingredient1"]').value;
     const ingredient2 = document.querySelector('input[name="ingredient2"]').value;
@@ -15,7 +14,6 @@ async function newFormHandler(event) {
       method: 'POST',
       body: JSON.stringify({
         name,
-        url,
         instructions,
         ingredient1,
         ingredient2,
@@ -28,7 +26,7 @@ async function newFormHandler(event) {
     });
   
     if (response.ok) {
-      document.location.replace('/recipe-dashboard');
+      document.location.replace('/view-recipes');
     } else {
       alert(response.statusText);
     }
