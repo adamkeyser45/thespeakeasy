@@ -1,13 +1,13 @@
 async function newFormHandler(event) {
     event.preventDefault();
   
-    const title = document.querySelector('input[name="recipe-name"]').value;
+    const name = document.querySelector('input[name="recipe-name"]').value;
     const instructions = document.querySelector('textarea[name="recipe-instructions"]').value;
     const ingredient1 = document.querySelector('input[name="ingredient1"]').value;
     const ingredient2 = document.querySelector('input[name="ingredient2"]').value;
     const ingredient3 = document.querySelector('input[name="ingredient3"]').value;
     const ingredient4 = document.querySelector('input[name="ingredient4"]').value;
-    console.log(title)
+    console.log(name)
   
   
     const response = await fetch(`/api/recipes`, {
