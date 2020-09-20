@@ -1,37 +1,41 @@
 <a href="/recipe-blog"><button class="button backBtn secondary">Go back</button></a>
 
 {{> post-info post}}
-
-<ul>
-    {{#each post.discusses as |comment|}}
-    <li>
-        {{comment.opinion}}
-    </li>
-    {{/each}}
-</ul>
-
+<div class="row medium-8 large-7 columns">
+    <ul class="menu simple">
+        <li><a>Author:</a></li>
+        <li><a>Rating:</a></li>
+    </ul>
+</div>
 {{!-- {{#if loggedIn}} --}}
-<div class="card row medium-8 large-7 column">
+<div class="card writeComment row medium-8 large-7 column">
     <div class="card-body">
-        
         <form class="comment-form">
             <div class="">
-                <textarea name="comment-body"  class="large-5 medium-5 small-12"></textarea>
+                <textarea name="comment-body" class="large-12 small-12"></textarea>
             </div>
-        </form> 
-            <div>
-                <button id="addCommentBtn" class="button">Leave a Comment!</button>
-            </div>
-               
+        </form>
+        <div>
+            <button id="addCommentBtn" class="button expanded secondary">Leave a Comment!</button>
+        </div>
+        <p><button class="button secondary expanded" data-open="exampleModal1">View Comments</button></p>
+
     </div>
 </div>
-
+<div class="reveal commentModal" id="exampleModal1" data-reveal>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <ul class="commentList">
+        {{#each post.discusses as |comment|}}
+        <li class="commentLi">
+            {{comment.opinion}}
+        </li>
+        {{/each}}
+    </ul>
+</div>
 {{!-- 
 {{/if}} --}}
-
-
-
-
 {{#if loggedIn}}
 <script src="/javascript/add-comment.js"></script>
 {{/if}}
