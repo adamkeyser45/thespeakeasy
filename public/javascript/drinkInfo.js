@@ -2,6 +2,8 @@ const searchResultChoiceName = document.getElementById("searchResultChoiceName")
 const searchResultChoiceImage = document.getElementById("searchResultChoiceImage");
 const searchResultInst = document.getElementById("searchResultInst");
 const searchIngrList = document.getElementById("searchIngrList");
+const whatYouNeed = document.getElementById("whatYouNeed");
+const howYouDo = document.getElementById("howYouDo");
 
 document.onclick = function(event) {
     searchIngrList.innerHTML = "";
@@ -23,6 +25,8 @@ document.onclick = function(event) {
                     searchResultChoiceImage.setAttribute("src", drinkImg);
                     searchResultInst.textContent = drinkInst;
 
+                    whatYouNeed.textContent = "What You'll Need:"
+                    howYouDo.textContent = "How You'll Do It:"
                     listIngredients(data);
                 });
             } else {

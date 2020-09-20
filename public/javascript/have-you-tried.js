@@ -30,7 +30,6 @@ function randomDrink(event) {
 };
 
 function listIngredients1(data) {
-    console.log(data);
     if (data.drinks[0].strIngredient1) {
         addToList1(data.drinks[0].strIngredient1, data.drinks[0].strMeasure1);
     }

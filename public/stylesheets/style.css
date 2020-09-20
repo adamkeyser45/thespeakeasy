@@ -137,8 +137,9 @@
 }
 
 #drinkInfoDiv {
-    
-    background-color: dimgray;
+    background: #ebebeb;
+    padding:10px;
+    border:2px grey solid;
 }
 
 /* The Close Button */

@@ -2,6 +2,8 @@ const searchResultChoiceName1 = document.getElementById("searchResultChoiceName"
 const searchResultChoiceImage1 = document.getElementById("searchResultChoiceImage");
 const searchResultInst1 = document.getElementById("searchResultInst");
 const searchIngrList1 = document.getElementById("searchIngrList");
+const whatYouNeed1 = document.getElementById("whatYouNeed");
+const howYouDo1 = document.getElementById("howYouDo");
 
 async function findDrink() {
     const drinkName = document.getElementById('drinkName').value;
@@ -90,10 +92,12 @@ btn.onclick = function(event) {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
-    searchResultChoiceName1.innerHTML = "";
+    searchResultChoiceName1.innerHTML = "Click on a Drink to See How to Make It!";
     searchResultChoiceImage1.setAttribute("src", "");
     searchResultInst1.innerHTML = "";
     searchIngrList1.innerHTML = "";
+    whatYouNeed1.textContent = "";
+    howYouDo1.textContent = "";
 };
 
 // When the user clicks anywhere outside of the modal, close it
