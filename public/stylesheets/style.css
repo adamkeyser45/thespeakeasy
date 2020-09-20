@@ -126,13 +126,43 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+#drinkInfoDiv {
+    background: #ebebeb;
+    padding:10px;
+    border:2px grey solid;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
   
-  .recipe-title{
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.recipe-title{
       padding: 20px;
       border-bottom: solid grey 5px;
       margin-bottom: 20px;
-  }
+}
+
 .recipe-link a{
     color: grey;
 }
