@@ -1,12 +1,16 @@
-async function findDrink() {
+const searchResultChoiceName1 = document.getElementById("searchResultChoiceName");
+const searchResultChoiceImage1 = document.getElementById("searchResultChoiceImage");
+const searchResultInst1 = document.getElementById("searchResultInst");
+const searchIngrList1 = document.getElementById("searchIngrList");
 
+async function findDrink() {
     const drinkName = document.getElementById('drinkName').value;
     const drinkIngr = document.getElementById('drinkIngr').value;
     const drinkNameDiv = document.getElementById('drinkNameDiv');
 
     if (drinkName && !drinkIngr) {
         // search for drink by name
-        const apiUrl = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + drinkName;
+        const apiUrl = "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=" + drinkName;
 
         fetch(apiUrl).then(function (response) {
             drinkNameDiv.innerHTML = "";
@@ -48,6 +52,8 @@ async function findDrink() {
                         const listItem = document.createElement("li");
                         const drinkTitle = document.createElement("a");
                         drinkTitle.textContent = data.drinks[i].strDrink;
+                        drinkTitle.classList.add("drink");
+                        drinkTitle.setAttribute("data", data.drinks[i].strDrink);
                         listItem.appendChild(drinkTitle);
                         drinkNameDiv.appendChild(listItem);
                     }
@@ -84,6 +90,10 @@ btn.onclick = function(event) {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
+    searchResultChoiceName1.innerHTML = "";
+    searchResultChoiceImage1.setAttribute("src", "");
+    searchResultInst1.innerHTML = "";
+    searchIngrList1.innerHTML = "";
 };
 
 // When the user clicks anywhere outside of the modal, close it
