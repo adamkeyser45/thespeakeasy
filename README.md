@@ -14,7 +14,34 @@ The Speakeasy is a platform for consumers, created by consumers. The Speakeasy i
 * [Schema Usage Walkthrough](https://drive.google.com/file/d/1DWdDydTegOgkPCSq3rsYVIom6uvSwJfQ/view) -->
 
 ## User Story
-AS a person who enjoys a nice drink and I WANT TO be able to find a new drink with ease ..... STILL WORKING
+```
+AS a person who enjoys going to bars and restaurants
+I WANT an online bar experience
+SO THAT I can stay social at a time where attending social gatherings are a health risk.
+```
+```
+GIVEN a functional social media forum
+WHEN I view the homepage
+THEN I am given the option to sign in, sign up, and browse/search unique cocktails and mixed drinks.
+WHEN I click login/sign-up
+THEN I am taken to a page where I can sign up for the site or sign in using previous made credentials.
+WHEN I view the navigation bar
+THEN I am presented with options to create a post, share a recipe, or view details about my account.
+WHEN I click the link to “Start a Conversation”
+THEN I am taken to a page where I can create a post.
+WHEN I click the link to “Share a Recipe”
+THEN I am taken to a page where I can create a recipe for a mixed drink.
+WHEN I click the “My Account” link
+THEN I can edit information about my account.
+WHEN I click the “Mingle at the Speakeasy” button
+THEN I can view and comment on previously made posts.
+WHEN I click on the “House Made Recipes” button
+THEN I can view and comment on previously shared recipes.
+WHEN I search for cocktails
+THEN I am presented with a list of drinks that match my search.
+WHEN I view my list of searched drinks
+THEN I can click on a drink and see how to make that drink.
+```
 
 ## Acceptance Criteria
 ```
