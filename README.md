@@ -8,11 +8,19 @@ The Speakeasy is a platform for consumers, created by consumers. The Speakeasy i
 ```
 
 ## Screenshots
-<!-- * [VS Code Walkthrough](https://drive.google.com/file/d/12LIgxmhXn4T3BxZX-zRINUZ4iL9UZ5Qd/view)
- 
-* [Insomnia Core Walkthrough](https://drive.google.com/file/d/1qHKzdIU0VcxjHzERE_ZLIIG_bV75UrSf/view)
-
-* [Schema Usage Walkthrough](https://drive.google.com/file/d/1DWdDydTegOgkPCSq3rsYVIom6uvSwJfQ/view) -->
+<img width="1440" alt="ScreenShot1" src="https://user-images.githubusercontent.com/65192910/93718065-3e99ce00-fb3f-11ea-9145-cd0f64db0900.png">
+<br>
+<br>
+<img width="1440" alt="ScreenShot2" src="https://user-images.githubusercontent.com/65192910/93718078-53766180-fb3f-11ea-816f-9b64903d2507.png">
+<br>
+<br>
+<img width="1440" alt="ScreenShot3" src="https://user-images.githubusercontent.com/65192910/93718130-af40ea80-fb3f-11ea-8620-511cad2a827a.png">
+<br>
+<br>
+<img width="1440" alt="ScreenShot4" src="https://user-images.githubusercontent.com/65192910/93718147-c67fd800-fb3f-11ea-98c3-097d96eaeba9.png">
+<br>
+<br>
+<img width="1000" alt="ScreenShot5" src="https://user-images.githubusercontent.com/65192910/93725473-26dd3c80-fb75-11ea-867f-fe0a19b07392.png">
 
 ## User Story
 AS a person who enjoys a nice drink and I WANT TO be able to find a new drink with ease ..... STILL WORKING
