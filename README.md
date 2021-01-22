@@ -6,6 +6,8 @@
 
 The Speakeasy is a platform for consumers, created by consumers. The Speakeasy is a host for people to share, post, comment, and rate beverage recipes. Employing handlebars.js, cocktaildb API, MySQL, Express.js, and Sequelize, The Speakeasy application allows access to only registered users. Upon loading, a user will be prompted with a login/signup page. After a successful register or login, the user will be redirected to the home page. Here, they will be presented with popular drinks, search filter functions, and a drink recipe of the day. The application provides an opportunity for discussion, as each post allows for comments and ratings.
 
+Link to Deployed Application: https://fierce-forest-64673.herokuapp.com/
+
 ## Screenshots
 <img width="1440" alt="ScreenShot1" src="https://user-images.githubusercontent.com/65192910/93718065-3e99ce00-fb3f-11ea-9145-cd0f64db0900.png">
 <br>
